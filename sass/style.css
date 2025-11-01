@@ -1,5 +1,10 @@
 body {
+  height: 100vh;
   font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(226, 43%, 10%);
 }
 
 .main {
@@ -124,6 +129,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(2, 200px);
+    justify-content: center;
     row-gap: 1rem;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
