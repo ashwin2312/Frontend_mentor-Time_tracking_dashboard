@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./sass/style.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="profile-card">
+        <div class="profile">
+          <div class="img">
+            <img src="./images/image-jeremy.png" alt="" />
+          </div>
+          <div class="name">
+            <p>Report for</p>
+            <p id="name">Jeremy Robson</p>
+          </div>
+        </div>
+        <div class="btn-div">
+          <p class="button" id="btn-daily">Daily</p>
+          <p class="button" id="btn-weekly">Weekly</p>
+          <p class="button" id="btn-monthly">Monthly</p>
+        </div>
+      </div>
+      <div class="card" id="work">
+        <div class="child-card">
+          <div class="top">
+            <p class="card-title">Work</p>
+          </div>
+          <div class="visibility" id="daily-work-visiblity">
+            <div id="daily-work" class="bottom daily">
+              <p class="current-p"><span class="current" id="current-work">5</span>hrs</p>
+              <p id="previous-work" class="previous-p">
+                Last Week - <span class="previous" id="last-work">7</span>hrs
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="Play">
+        <div class="child-card">
+          <div class="top">
+            <p class="card-title">Play</p>
+          </div>
+          <div class="visibility" id="daily-Play-visiblity">
+            <div id="daily-Play" class="bottom daily">
+              <p class="current-p"><span class="current" id="current-play">1</span>hr</p>
+              <p id="prev-play" class="previous-p">
+                Last Week - <span class="previous" id="last-play">2</span>hrs
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="Study">
+        <div class="child-card">
+          <div class="top">
+            <p class="card-title">Study</p>
+          </div>
+          <div class="visibility" id="daily-Study-visiblity">
+            <div id="daily-Study" class="bottom daily">
+              <p class="current-p"><span class="current" id="current-study">0</span>hr</p>
+              <p id="prev-study" class="previous-p">
+                Last Week - <span class="previous" id="last-study">1</span>hr
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="Exercise">
+        <div class="child-card">
+          <div class="top">
+            <p class="card-title">Exercise</p>
+          </div>
+          <div class="visibility" id="daily-Exercise-visiblity">
+            <div id="daily-Exercise" class="bottom daily">
+              <p class="current-p"><span class="current" id="current-exercise">1</span>hr</p>
+              <p id="prev-exercise" class="previous-p">
+                Last Week - <span class="previous" id="last-exercise">1</span>hr
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="social">
+        <div class="child-card">
+          <div class="top">
+            <p class="card-title">Social</p>
+          </div>
+          <div class="visibility" id="daily-social-visiblity">
+            <div id="daily-social" class="bottom daily">
+              <p class="current-p"><span class="current" id="current-social">1</span>hr</p>
+              <p id="prev-social" class="previous-p">
+                Last Week - <span class="previous" id="last-social">3</span>hrs
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="self-care">
+        <div class="child-card">
+          <div class="top">
+            <p class="card-title">Self Care</p>
+          </div>
+          <div class="visibility" id="daily-self-visiblity">
+            <div id="daily-selfcare" class="bottom daily">
+              <p class="current-p"><span class="current" id="current-selfcare">0</span>hrs</p>
+              <p id="prev-selfcare" class="previous-p">
+                Last Week - <span class="previous" id="last-self-care">1</span>hr
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ashwin Kumar</a>.
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
